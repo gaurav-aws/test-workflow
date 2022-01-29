@@ -36,6 +36,5 @@ jobs:
         echo ${{ github.sha }}=${new_version}
         cat version.txt
         ls -ltra version.txt
-        aws s3 cp version.txt s3://${{ secrets.S3_BUCKET_MASTER }}/version.txt
         
         
