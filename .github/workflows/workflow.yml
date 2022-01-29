@@ -34,5 +34,5 @@ jobs:
         echo ${{ github.sha }}=${new_version}
         aws s3 cp version.txt s3://${{ secrets.S3_BUCKET_MASTER }}/version.txt
         source version.txt
-        echo `${{ github.sha }}`
+        echo ${bf16c56e1c0481e4d47ef7f5ac3181f58b8c7d2b}
         
